@@ -13,7 +13,7 @@ const Services = () => {
             <div className='grid md:grid-cols-2 gap-8'>
                 
 
-                <Link href='/otherServices'>
+                <Link href='/services/webSites'>
                     <div className='p-6 shadow-xl rounded-xl scale-90 hover:scale-100 ease-in duration-300 hover:bg-emerald-500 hover:text-white'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
@@ -26,7 +26,7 @@ const Services = () => {
                     </div>
                 </Link>
 
-                <Link href='/otherServices'>
+                <Link href='/services/graphicDesign'>
                     <div className='p-6 shadow-xl rounded-xl scale-90 hover:scale-100 ease-in duration-300 hover:bg-emerald-500 hover:text-white'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
@@ -39,7 +39,7 @@ const Services = () => {
                     </div>
                 </Link>
 
-                <Link href='/greencardvisas'>
+                <Link href='/services/branding'>
                     <div className='p-6 shadow-xl rounded-xl scale-90 hover:scale-100 ease-in duration-300 hover:bg-emerald-500 hover:text-white'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
@@ -52,7 +52,7 @@ const Services = () => {
                     </div>
                 </Link>
 
-                <Link href='/otherServices'>
+                <Link href='/services/socialMedia'>
                     <div className='p-6 shadow-xl rounded-xl scale-90 hover:scale-100 ease-in duration-300 hover:bg-emerald-500 hover:text-white'>
                         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>

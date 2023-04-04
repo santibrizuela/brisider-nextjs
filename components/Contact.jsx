@@ -10,39 +10,37 @@ const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-            <p className='py-8 text-xl tracking-widest uppercase text-[#a21a21] text-center'>Contacto</p>
+            <p className='py-8 text-xl tracking-widest uppercase text-emerald-500 text-center'>Contacto</p>
             <h2 className='py-4 text-center'>Estemos en Contacto</h2>
             <div className='grid lg:grid-cols-5 gap-8'>
                 {/*left*/}
                 <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 scale-90 hover:scale-100 ease-in duration-300'>
                     <div className='p-4'>
-                        <form id='contactForm'>
-                            <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                        <form action="https://formsubmit.co/brizuelasideravicius@gmail.com" method="POST">
+                            <div className='grid gap-4 w-full py-2'>
 
                                 <div className='flex flex-col'>
-                                    <label className='uppercase text-sm py-2'>Nombre</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="name" required placeholder='Nombre Completo'/>
                                 </div>
 
                                 <div className='flex flex-col'>
-                                    <label className='uppercase text-sm py-2'>Telefono</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="number" placeholder='1234567890'/>
+                                </div>
+
+                                <div className='flex flex-col'>
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" name="email" required placeholder='mail@mail.com'/>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="issue" placeholder='Su asunto...'/>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10' name="message" required placeholder='Escribir aquí...'/>
                                 </div>
 
                             </div>
-                            <div className='flex flex-col py-2'>
-                                <label className='uppercase text-sm py-2'>Email</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" />
-                            </div>
-                            <div className='flex flex-col py-2'>
-                                <label className='uppercase text-sm py-2'>Asunto</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
-                            </div>
-                            <div className='flex flex-col py-2'>
-                                <label className='uppercase text-sm py-2'>Mensaje</label>
-                                <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
-                            </div>
-                            <button className='w-full p-4 text-gray-100 mt-4 btn'>Enviar Mensaje</button>
+                            
+                            
+                            <button type="submit" className='w-full p-4 text-gray-100 mt-4 btn'>Enviar Mensaje</button>
                         </form>
                     </div>
                 </div>
@@ -57,10 +55,11 @@ const Contact = () => {
                         <div className='text-center'>
                             
                             <h2 className='py-4 text-gray-300'><span className='text-emerald-500 uppercase'>Brisider</span></h2>
-                            <p className='pb-1'>Desarrollo Software</p>
+                            <p className='pb-1'>Digitalizamos tu marca</p>
                             
                             <p>Ciudad Madero, Buenos Aires, Argentina.</p>
-                            <p>Lunes a viernes: 8hs a 12:30 / 16:30 a 20hs</p>
+                            <p>Lunes a viernes de 8:00 a 20:00 hs.</p>
+                            <p>brizuelasideravicius@gmail.com</p>
                         </div>
                         <div className='text-center'>
                             <p className='uppercase pt-8'> Conecta con Nosotros</p>
@@ -80,7 +79,7 @@ const Contact = () => {
                                         <AiOutlineMail/>
                                     </div>
                                 </Link>
-                                <Link href='/#projects'>
+                                <Link href='/#portfolio'>
                                     <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <BsPersonVcard/>
                                     </div>

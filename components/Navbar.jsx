@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu, AiFillInstagram, AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram} from 'react-icons/ai'
-import {BsFillPersonLinesFill, BsPersonVcard} from 'react-icons/bs'
+import {BsPersonVcard} from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import bsLogo from '../public/assets/bsLogo.png'
 import bsLogoGray from '../public/assets/bsLogoGray.png'
@@ -36,7 +36,7 @@ const Navbar = () => {
 
     useEffect(()=> {
       const handleShadow = () => {
-        if (window.scrollY>= 90) {
+        if (window.scrollY>= 30) {
           setShadow(true);
         } else {
           setShadow(false)
@@ -148,7 +148,7 @@ const Navbar = () => {
                     </div>
                   </Link>
                   
-                  <Link href='/#projects'>
+                  <Link href='/#portfolio'>
                     <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
                       <BsPersonVcard/>
                     </div>

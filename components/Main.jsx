@@ -28,7 +28,7 @@ const Main = () => {
                             <AiOutlineMail/>
                         </div>
                     </Link>
-                    <Link href='/#projects'>
+                    <Link href='/#portfolio'>
                         <div className='rounded-full icolink shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <BsPersonVcard/>
                         </div>
